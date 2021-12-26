@@ -180,9 +180,13 @@
             if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
                 document.getElementById("titulo").classList.add('scrolleao');
                 document.getElementById("loguito").classList.add('mover');
+                document.getElementById("titulo").classList.remove('descrollear');
+                document.getElementById("loguito").classList.remove('demover');
             } else {
                 document.getElementById("titulo").classList.remove('scrolleao');
                 document.getElementById("loguito").classList.remove('mover');
+                document.getElementById("titulo").classList.add('descrollear');
+                document.getElementById("loguito").classList.add('demover');
             }
         }
     </script>
