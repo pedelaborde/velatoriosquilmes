@@ -3,16 +3,20 @@
 
 <head>
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-NMDLLT8');</script>
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-NMDLLT8');</script>
     <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Servicios fúnebres. Atención 24hs los 365 días del año. Obras sociales, salas velatorias, cremaciones, parques privados, cementerios públicos.">
+    <meta name="description"
+        content="Servicios fúnebres. Atención 24hs los 365 días del año. Obras sociales, salas velatorias, cremaciones, parques privados, cementerios públicos.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -26,26 +30,32 @@
 </head>
 
 <body>
-        <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NMDLLT8"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NMDLLT8" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <header>
-        <div class="container" id="bann">
-            <div class="row justify-content-center py-2">
-                <div class="col-4 col-sm-3 col-md-2">
-                    <img src="logo.png" class="img-fluid" id="loguito">
+    <header class="sticky-sm-top container-fluid p-0" id="header">
+        <div class="row me-1">
+            <div class="col-12 col-md-8">
+                <div class="row py-3 justify-content-center">
+                    <div class="col-12 col-sm-3 col-md-3">
+                        <img src="logo.png" class="img-fluid float-sm-end" id="loguito">
+                    </div>
+                    <h1 class="col-12 col-sm-8 col-md-9 pt-3" id="titulo">Velatorio Quilmes</h1>
                 </div>
-                <h1 class="col-sm-9 col-md-6 col-lg-4 align-self-center">Velatorio Quilmes</h1>
-                <i class="col-1 offset-lg-3 fa fa-phone align-self-center" id="fono"></i>
-                <div class="col-8 col-sm-4 col-md-3 col-lg-2 align-self-center justify">
-                    <p class="m-0 p-0">Emergencias 24hs</p>
-                    <a href="tel:01149246253" class="d-block m-0 p-0"> (011) 4924-6253</a>
-                    <a href="tel:01165601195" class="d-block m-0 p-0"> (011) 6560-1195</a>
+            </div>
+            <div class="col-12 col-md-4 py-3">
+                <div class="row justify-content-center ">
+                    <i class="col-2 col-sm-2 offset-md-2 fa fa-phone float-end pt-4" id="fono"></i>
+                    <div class="col-7 col-sm-4 col-md-8">
+                        <p class="m-0 p-0 tamanio">Emergencias 24hs</p>
+                        <a href="tel:01149246253" class="d-block m-0 p-0 tamanio"> (011) 4924-6253</a>
+                        <a href="tel:01165601195" class="d-block m-0 p-0 tamanio"> (011) 6560-1195</a>
+                    </div>
                 </div>
             </div>
         </div>
-        <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark bg-gradient">
+        <nav id="navegacao" class="navbar navbar-expand-lg navbar-dark bg-dark bg-gradient">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -62,9 +72,8 @@
     </header>
     <main>
         <section>
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div id="carru" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-
                     <div class="carousel-item active">
                         <img src="flores.jpg" class="d-block w-100" alt="...">
                     </div>
@@ -164,10 +173,23 @@
                 allowfullscreen="" loading="lazy" class="col-md-6 my-sm-3"></iframe>
         </section>
     </footer>
-</body>
+    <script>
+        window.onscroll = function () { scrollFunction() };
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
+        function scrollFunction() {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                document.getElementById("titulo").classList.add('scrolleao');
+                document.getElementById("loguito").classList.add('mover');
+            } else {
+                document.getElementById("titulo").classList.remove('scrolleao');
+                document.getElementById("loguito").classList.remove('mover');
+            }
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
 
 </html>
