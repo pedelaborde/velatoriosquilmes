@@ -72,6 +72,9 @@ iframe{
 	#header, h1{
 		text-align: center;
 	}
+	html, body{
+		overflow-x: hidden;
+	}
 }
 
 @media (max-width: 576px) { 
