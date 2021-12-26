@@ -173,7 +173,3 @@ span.anchor {
 #tels a[href^="tel:"] {
 	color: red;
 }
-
-html, body {
-	overflow-x: hidden;
-  }
