@@ -150,3 +150,12 @@ footer a{
 	transition: 0.6s;
 	transform: translate(10vw);
 }
+
+.descrollear{
+	transition: 0.6s;
+	opacity: 1;
+}
+.demover{
+	transition: 0.6s;
+	transform: translate(0vw);
+}
