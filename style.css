@@ -6,6 +6,13 @@ html {
     background-color: #660000 !important;
 }
 
+#header {
+	top: 0;
+	width: 100%;
+	background-color: white;
+  }
+
+
 #fono{
     text-align: right;
 	font-size: 2.4rem;
@@ -44,10 +51,10 @@ h2{
 
 h1{
     font-family: "alex-brush";
-    font-size: 3.5rem;
+    font-size: 3rem;
 }
 
-#contacto h2{
+#cursiva{
 	font-family: "alex-brush";
 	font-size: 3rem;
 }
@@ -57,39 +64,8 @@ iframe{
 	width: 40vw;
 }
 
-@media (max-width: 992px) { 
-	iframe{
-		height: 40vh;
-		width: 100vw;
-	}
-}
-
-@media (max-width: 768px) { 
-	iframe{
-		height: 50vh;
-		width: 100vw;
-	}
-	#header, h1{
-		text-align: center;
-	}
-	html, body{
-		overflow-x: hidden;
-	}
-}
-
-@media (max-width: 576px) { 
-	#fono{
-		text-align: right;
-	}
-	h1{
-		font-size: 3rem;
-	}
-}
 .card{
 	border: none;
-}
-.tamanio{
-	font-size: 1.2rem;
 }
 
 #abt p{
@@ -105,7 +81,7 @@ footer{
 }
 
 nav a{
-	font-size: 1.3rem;
+	font-size: 1rem;
 }
 
 footer a{
@@ -133,18 +109,45 @@ footer a{
 	margin-top:16px;
 }
 
-@media (max-width: 767.9px) { 
-	#navegacao, #loguito {
-		display: none;
+@media (max-width: 992px) { 
+	iframe{
+		height: 40vh;
+		width: 100vw;
 	}
 }
+@media (max-width: 767.9px) { 
+	#navegacao, #loguito, #repe, #carru, #fono, .borrar{
+		display: none;
+	}
+	header{
+		background-color: #660000 !important;
+		color: ivory;
+	}
+	#tels a[href^="tel:"] {
+		color: ivory !important;
+	}
 
-#header {
-	top: 0;
-	width: 100%;
-	background-color: white;
-  }
-
+}
+@media (max-width: 768px) { 
+	iframe{
+		height: 50vh;
+		width: 100vw;
+	}
+	#header, h1{
+		text-align: center;
+	}
+	html, body{
+		overflow-x: hidden;
+	}
+}
+@media (max-width: 576px) { 
+	#fono{
+		text-align: right;
+	}
+	h1{
+		font-size: 3rem;
+	}
+}
 
 @media (min-width: 768px){
 	.scrolleao{
@@ -164,6 +167,10 @@ footer a{
 		transition: 0.6s;
 		transform: translate(0vw);
 	}
+
+	.barrita{
+		display: none;
+	}
 }
 
 span.anchor {
@@ -174,5 +181,5 @@ span.anchor {
 }
 
 #tels a[href^="tel:"] {
-	color: red;
+	color: black;
 }
